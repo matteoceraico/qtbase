@@ -7,6 +7,8 @@ android: SUBDIRS += android
 
 !android:qtConfig(freetype): SUBDIRS += offscreen
 
+!win32:!winrt: SUBDIRS += phantom
+
 qtConfig(xcb) {
     SUBDIRS += xcb
 }
