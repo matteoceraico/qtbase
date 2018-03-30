@@ -5,6 +5,8 @@ android: SUBDIRS += android
 
 !android: SUBDIRS += minimal
 
+!win32:!winrt: SUBDIRS += phantom
+
 !android:qtConfig(freetype): SUBDIRS += offscreen
 
 qtConfig(xcb) {
